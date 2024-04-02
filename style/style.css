@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #303030;
+}
+
+#notification-bar {
+    text-align: center;
+    background-color: #EE4B2B;
+    padding: 8px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#notification-bar-link {
+    color: black;
+}
+
+#notification-bar-close {
+    padding-left: 2px;
+}
+
+#notification-bar-close:hover {
+    cursor: pointer;
+}
+
+.nav-bar-right {
+    float: right;
+}
+
+.nav-bar-left {
+    float: left;
+}
+
+#nav-bar {
+    background-color: #212121;
+    display: block;
+    overflow: auto;
+}
+
+#nav-bar-list {
+    list-style-type: none;
+    padding-right: 8px;
+}
+
+.nav-element {
+    margin: 16px 4px;
+    padding: 8px 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.nav-element a {
+    text-decoration: none;
+    color: white;
+}
+.nav-element:hover, .nav-bar-selected {
+    background-color: #424242;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.nav-important {
+    background-color: #739AD6;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+.nav-important:hover {
+    background-color: #739AD6;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.nav-logo {
+    padding: 8px;
+}
+
+.nav-title {
+    padding: 24px 4px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.nav-title a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,152 +1,59 @@
+<!--
+
+______                              _  ______         _____ _            _____         _
+| ___ \                            | | | ___ \       |_   _| |          |_   _|       | |
+| |_/ /____      _____ _ __ ___  __| | | |_/ /_   _    | | | |__   ___    | |  ___ ___| |__  _   _ _ __ __ _
+|  __/ _ \ \ /\ / / _ \ '__/ _ \/ _` | | ___ \ | | |   | | | '_ \ / _ \   | | / __/ _ \ '_ \| | | | '__/ _` |
+| | | (_) \ V  V /  __/ | |  __/ (_| | | |_/ / |_| |   | | | | | |  __/  _| || (_|  __/ |_) | |_| | | | (_| |
+\_|  \___/ \_/\_/ \___|_|  \___|\__,_| \____/ \__, |   \_/ |_| |_|\___|  \___/\___\___|_.__/ \__,_|_|  \__, |
+                                               __/ |                                                    __/ |
+                                              |___/                                                    |___/
+
+-->
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>HTML Cheat Sheet</title>
-	</head>
-	<body>
-		<a href="blog.html">Go to blog</a>
-		<hr>
-		<!-- Headings -->
-		<h1>Heading One</h1>
-		<h2>Heading Two</h2>
-		<h3>Heading Three</h3>
-		<h4>Heading Four</h4>
-		<h5>Heading Five</h5>
-		<h6>Heading Six</h6>
+    <head>
 
-		<!-- Paragraph -->
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor <strong>incididunt ut labore</strong> et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud <em>exercitation ullamco</em> laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="http://google.com" target="_blank">sed do eiusmod</a>
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+        <!-- Tab Title + Icon -->
+        <title>The Iceburg</title>
+        <link rel="icon" href="./img/logo.svg">
 
-		<!-- Lists -->
-		<ul>
-			<li>List Item 1</li>
-			<li>List Item 2</li>
-			<li>List Item 3</li>
-			<li>List Item 4</li>
-		</ul>
+        <!-- Responsive Design Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<ol>
-			<li>List Item 1</li>
-			<li>List Item 2</li>
-			<li>List Item 3</li>
-			<li>List Item 4</li>
-		</ol>
+        <!-- Font Awesome Import -->
+        <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
 
-		<!-- Table -->
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Email</th>
-					<th>Age</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Brad Traversy</td>
-					<td>brad@something.com</td>
-					<td>35</td>
-				</tr>
-				<tr>
-					<td>John Doe</td>
-					<td>jdoe@something.com</td>
-					<td>45</td>
-				</tr>
-				<tr>
-					<td>Sara Williams</td>
-					<td>sara@something.com</td>
-					<td>25</td>
-				</tr>
-			</tbody>
-		</table>
+        <!-- Font Import -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-		<br>
-		<hr>
-		<br>
+        <!-- Page Styling -->
+        <link rel="stylesheet" href="./style/style.css">
 
-		<!-- Forms -->
-		<form action="process.php" method="POST">
-			<div>
-				<label>First Name</label>
-				<input type="text" name="firstName" placeholder="Enter first name">
-			</div>
-			<br>
-			<div>
-				<label>Last Name</label>
-				<input type="text" name="lastName">
-			</div>
-			<br>
-			<div>
-				<label>Email</label>
-				<input type="email" name="email">
-			</div>
-			<br>
-			<div>
-				<label>Message</label>
-				<textarea name="message"></textarea>
-			</div>
-			<br>
-			<div>
-				<label>Gender</label>
-				<select name="gender">
-					<option value="male">Male</option>
-					<option value="female">Female</option>
-					<option value="other">Other</option>
-				</select>
-			</div>
-			<br>
-				<div>
-					<label>Age:</label>
-					<input type="number" name="age" value="30">
-				</div>
-				<br>
-				<div>
-					<label>Birthday:</label>
-					<input type="date" name="birthday">
-				</div>
-				<br>
-				<input type="submit" name="submit" value="Submit">
-		</form>
-
-		<!-- Button -->
-		<button>Click Me</button>
-
-		<br>
-
-		<!-- Image -->
-		<a href="images/sample.jpg">
-			<img src="images/sample.jpg" alt="My Sample Image" width="200">
-		</a>
-
-		<!-- Quotations -->
-		<blockquote cite="http://traversymedia.com">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</blockquote>
-
-		<p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
-
-		<p><cite>HTML crash course</cite> by Ben Wallace</p>
-
-		<div style="margin-top:500px"></div>
-	</body>
+    </head>
+    <body>
+        <div id="notification-bar">
+            <p>Our website is currently under-development, please report any issues <a id="notification-bar-link" href="https://github.com/The-Iceburg/TheIceburg.Net/issues/new">here</a><a onclick="hideNotif();return false"><i id="notification-bar-close" class="fa-solid fa-xmark"></i></a></p>
+            <script type="text/javascript">
+                function hideNotif() {
+                document.getElementById("notification-bar").style.display = "none"
+                }
+            </script>
+        </div>
+        <div id="nav-bar">
+            <ul id="nav-bar-list">
+                <li class="nav-logo nav-bar-left"><a href="./"><img src="./img/logo.svg" height="48" width="48"></a></li>
+                <li class="nav-title nav-bar-left"><a href="./">The Iceburg</a></li>
+                <li class="nav-important nav-element nav-bar-right"><a href="./contact">Contact Us</a></li>
+                <li class="nav-element nav-bar-right"><a href="./join-us"><i class="fa-solid fa-user-plus"></i> | Join Us</a></li>
+                <li class="nav-element nav-bar-right"><a href="./blog"><i class="fa-solid fa-newspaper"></i> | Blog</a></li>
+                <li class="nav-element nav-bar-right"><a href="./our-projects"><i class="fa-solid fa-puzzle-piece"></i> | Our Projects</a></li>
+                <li class="nav-element nav-bar-right"><a href="./about-us"><i class="fa-solid fa-circle-info"></i> | About Us</a></li>
+                <li class="nav-element nav-bar-right nav-bar-selected"><a href="./"><i class="fa-solid fa-house"></i> | Home</a></li>
+            </ul>
+        </div>
+    </body>
 </html>
