@@ -1,0 +1,17 @@
+#notification-bar {
+    text-align: center;
+    background-color: #EE4B2B;
+    padding: 8px;
+}
+
+#notification-bar-link {
+    color: #000000;
+}
+
+#notification-bar-close {
+    padding-left: 2px;
+}
+
+#notification-bar-close:hover {
+    cursor: pointer;
+}

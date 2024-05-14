@@ -32,10 +32,15 @@ ______                              _  ______         _____ _            _____  
 
         <!-- Page Styling -->
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/notification-bar.css">
+        <link rel="stylesheet" href="./style/nav-bar.css">
+        <link rel="stylesheet" href="./style/projects.css">
 
     </head>
     <body>
-        <div id="notification-bar">
+
+        <div id="notification-bar" class="regular">
             <p>Our website is currently under-development, please report any issues <a id="notification-bar-link" href="https://github.com/The-Iceburg/TheIceburg.Net/issues/new">here</a><a onclick="hideNotif();return false"><i id="notification-bar-close" class="fa-solid fa-xmark"></i></a></p>
             <script type="text/javascript">
                 function hideNotif() {
@@ -43,17 +48,105 @@ ______                              _  ______         _____ _            _____  
                 }
             </script>
         </div>
-        <div id="nav-bar">
+
+        <div id="nav-bar" class="bold">
             <ul id="nav-bar-list">
-                <li class="nav-logo nav-bar-left"><a href="./"><img src="./img/logo.svg" height="48" width="48"></a></li>
-                <li class="nav-title nav-bar-left"><a href="./">The Iceburg</a></li>
-                <li class="nav-important nav-element nav-bar-right"><a href="./contact">Contact Us</a></li>
-                <li class="nav-element nav-bar-right"><a href="./join-us"><i class="fa-solid fa-user-plus"></i> | Join Us</a></li>
-                <li class="nav-element nav-bar-right"><a href="./blog"><i class="fa-solid fa-newspaper"></i> | Blog</a></li>
-                <li class="nav-element nav-bar-right"><a href="./our-projects"><i class="fa-solid fa-puzzle-piece"></i> | Our Projects</a></li>
-                <li class="nav-element nav-bar-right"><a href="./about-us"><i class="fa-solid fa-circle-info"></i> | About Us</a></li>
-                <li class="nav-element nav-bar-right nav-bar-selected"><a href="./"><i class="fa-solid fa-house"></i> | Home</a></li>
+                <li class="nav-logo    nav-bar-left"                 ><a href="./"><img src="./img/logo.svg" height="48" width="48"></a></li>
+                <li class="nav-title   nav-bar-left"                 ><a href="./">The Iceburg</a></li>
+                <li class="nav-element nav-bar-right nav-important"  ><a href="./contact">Contact Us</a></li>
+                <li class="nav-element nav-bar-right"                ><a href="./join-us"><i class="fa-solid fa-user-plus"></i> | Join Us</a></li>
+                <li class="nav-element nav-bar-right"                ><a href="./blog"><i class="fa-solid fa-newspaper"></i> | Blog</a></li>
+                <li class="nav-element nav-bar-right  nav-bar-selected"><a href="./our-projects"><i class="fa-solid fa-puzzle-piece"></i> | Our Projects</a></li>
+                <li class="nav-element nav-bar-right"                ><a href="./about-us"><i class="fa-solid fa-circle-info"></i> | About Us</a></li>
             </ul>
+        </div>
+        <div id="project-wrapper">
+            <div id="project-list">
+                <div class="project">
+                    <h1 class="project-heading bold">BLGC Website</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">A redesign of the Bournemouth Lifeguard Corps website.</p>
+                    <a class="project-link medium" href="https://blgc.theiceburg.net"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">.github</h1>
+                    <p class="project-tags medium">Other</p>
+                    <p class="project-desc regular"></p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/.github"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">TheIceburg.Net</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">The main Iceburg website which holds our project library and individual portfolios</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/TheIceburg.Net"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Speeds Wrapped</h1>
+                    <p class="project-tags medium">Python Tool</p>
+                    <p class="project-desc regular">A program which takes take from speeds competitions and generates a unique "wrapped" page for each competitor.</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/speeds-wrapped"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">.bs</h1>
+                    <p class="project-tags medium">Language</p>
+                    <p class="project-desc regular">A powerful markup language, developed to handle educational content for Bit Smart</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/.bs"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Robotics IMS</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">An inventory management system for a robotics kit.</p>
+                    <a class="project-link medium" href="./robotics-ims"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Bit Smart</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">Get a bit smarter with BitSmart!</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/Bit-Smart"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Totems Plus</h1>
+                    <p class="project-tags medium">Python Tool</p>
+                    <p class="project-desc regular">Pushing the limits with Totems in Minecraft</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/TotemsPlus"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Lifesaving Competition Calculator</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">A competition calculator designed for lifesaving events</p>
+                    <a class="project-link medium" href="./lifesaving-competition-calculator"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Steganography</h1>
+                    <p class="project-tags medium">Ethical Hacking</p>
+                    <p class="project-desc regular">An image encoder/decoder showcase</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/Steganography"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">TotemsPlus.Net</h1>
+                    <p class="project-tags medium">Website</p>
+                    <p class="project-desc regular">The port of Totems Plus for the interweb!</p>
+                    <a class="project-link medium" href="./totems-plus"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Password Checker</h1>
+                    <p class="project-tags medium">Coursework</p>
+                    <p class="project-desc regular">Password Checker Coursework</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/Password-Checker"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Airports</h1>
+                    <p class="project-tags medium">Coursework</p>
+                    <p class="project-desc regular">Airports Coursework</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/Airports"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+                <div class="project">
+                    <h1 class="project-heading bold">Area Trainer</h1>
+                    <p class="project-tags medium">Coursework</p>
+                    <p class="project-desc regular">area Trainer Cousework</p>
+                    <a class="project-link medium" href="https://github.com/The-Iceburg/Area-Trainer"><i class="fa-solid fa-link"></i> | Link</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>

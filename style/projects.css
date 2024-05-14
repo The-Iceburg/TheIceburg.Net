@@ -1,0 +1,79 @@
+#project-list {
+    display: grid;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    row-gap: 32px;
+}
+
+#project-wrapper {
+    margin-top: 32px;
+}
+
+.project {
+    background-color: #212121;
+    border-radius: 25px;
+    padding: 24px;
+    padding-top: 16px;
+    color: #ffffff;
+}
+
+/* The sub-section heading */
+.project-heading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.project-tags {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+/* The sub-section image */
+.project-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* The sub-section description */
+.project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+/* The sub-section learn-more button */
+.project-link {
+    background-color: #000000;
+    border-width: 0px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 950px) {
+    #project-list {
+        grid-template-columns: 49% 49%;
+    }
+    
+}
+
+@media screen and (max-width: 675px) {
+    #project-list {
+        grid-template-columns: 100%;
+    }
+    
+}
